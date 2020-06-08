@@ -22,6 +22,8 @@ By default the app use only one buildpack, the `heroku/php` buildpack,
 as we use `webpack-encore` to manage or assets, we must add the
 `nodejs` buildpack to build our assets.
 
+`heroku buildpacks:set heroku/php`
+
 `heroku buildpacks:add --index 1 heroku/nodejs`
 
 Finaly
